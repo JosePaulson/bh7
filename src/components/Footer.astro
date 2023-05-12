@@ -1,0 +1,111 @@
+<div class="container">
+    <div class="boxLeft">
+
+    </div>
+    <div class="boxRight">
+
+    </div>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="Newsletter(Email)">
+            <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <!-- <div class="dev">Developed by Kerasoft</div> -->
+        <div class="copyRight"><small>Copyright &copy; 2020 - 2023 &nbsp; All rights reserved.</small></div>
+    </div>
+</div>
+
+<style>
+    a {
+        color: #fafafa;
+    }
+    .container {
+        display: flex;
+        height: 25rem;
+        position: relative;
+    }
+    .boxLeft {
+        width: 50%;
+        height: 100%;
+    }
+    .boxRight {
+        width: 50%;
+        background: #336e6e;
+    }
+    .footer {
+        position: absolute;
+        background-color: #081a26;
+        inset: 2.65rem;
+        box-shadow: 1px 1px 15px 1px #4f4f4fcc;
+    }
+    .footer-links {
+        margin: 1.5rem 0;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15vw 2rem;
+        gap: 1rem;
+    }
+    .newsletter input {
+        border-radius: 50px;
+        padding: 1rem;
+        flex: 1;
+        border: none;
+        text-indent: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .btn {
+        font-weight: bold;
+        font-size: 1.4rem;
+        background-color: #336e6e;
+        border-radius: 50%;
+        border: none;
+        width: 3.2rem;
+        height: 3.2rem;
+        flex: none
+    }
+    .btn:hover {
+        background-color: #336e6e;
+    }
+    .dev {
+        text-align: center;
+        color: #336e6e;
+        font-size: 12px;
+    }
+    .copyRight {
+        text-align: center;
+        color: #888;
+    }
+    @media only screen and (max-width: 600px) {
+        .container {
+        height: 21rem;
+        }
+        .footer {
+            inset: .75rem;
+        }
+        .footer > div {
+            gap: 1.2rem;
+            
+        }
+        .newsletter {
+            margin: 0 5vw 2rem;
+        }
+
+    }
+</style>

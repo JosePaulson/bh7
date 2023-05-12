@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Menu4 from "../components/Menu4.astro"
+---
+
+<Layout title="BHeavenOn7">
+    <div>
+        <h3>Lunch</h3>
+    </div>
+    <Menu4/>
+</Layout>
+
+<style>
+    h3 {
+        padding: .75rem 0 2rem 1.5rem;
+        font-size: 2rem;
+        color: #000a;
+        border-bottom: 1px solid #7775;
+        margin-bottom: 0;
+    }
+    h6 {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 1.25rem;
+        color: #336e6e;
+    }
+    span {
+        font-size: 8rem;
+        font-weight: bold;
+        display: block;
+    }
+    .container {
+        max-width: 1200px;
+        margin-inline: auto;
+        background-color: #fff;
+        padding: 1.8rem 16px;
+        margin: 2vw auto;
+    }
+    .tag-1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-align: center;
+        max-width: 800px;
+        margin-inline: auto;
+        padding-inline: 12px;
+    }
+    .tag-2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-inline: 6vw;
+        text-align: center;
+    }
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+    .founder {
+        display: flex;
+        justify-content: end;
+        padding-right: 1rem;
+    }
+    .founder-name {
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+    @media only screen and (max-width: 640px) {
+        p {
+            font-size: 1.875rem;
+        }
+        span {
+            font-size: 6rem;
+        }
+        .tag-1 {
+            font-size: 1.8rem;
+        }
+        .tag-2 {
+            padding: 0;
+            font-size: 1.3rem;
+        }
+        .container {
+
+            padding: 1.6rem 24px;
+            margin-bottom: 1.2rem;
+        }
+        .founder {
+            justify-content: center;
+            padding-right: 0;
+        }
+        .founder-name {
+            font-size: 1rem;
+        }
+    }
+</style>

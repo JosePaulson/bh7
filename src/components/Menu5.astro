@@ -1,0 +1,62 @@
+---
+import MenuItem from "./MenuItem.astro";
+// import Dosa from "../Images/dosa.jpg"
+// import Idli from "../Images/idli.jpg"
+// import Bonda from "../Images/bonda.jpg"
+// import Poori from "../Images/poori.jpg"
+import Biriyani from "../Images/biriyani.jpg"
+import Chinese from "../Images/chinese.jpg"
+// import Meals from "../Images/meals.jpg"
+import Continental from "../Images/continental.jpg"
+import Starters from "../images/starters.jpg"
+import Rosies from "../images/rosies.jpg"
+import Curries  from "../images/curries.jpg"
+
+---
+
+<div class="mainContainer">
+    <div class="container">
+        <!-- <MenuItem item='BREAKFAST' itemName='Dosa' image={Dosa} hide label='hidden' />
+        <MenuItem item='BREAKFAST' itemName='Idli' image={Idli} hide label='hidden' />
+        <MenuItem item='BREAKFAST' itemName='Bonda' image={Bonda} hide label='hidden' />
+        <MenuItem item='BREAKFAST' itemName='Poori' image={Poori} hide label='hidden' /> -->
+        <MenuItem item='LUNCH/DINNER' itemName='Biriyani' image={Biriyani} hide label='hidden' />
+        <!-- <MenuItem item='LUNCH' itemName='Meals' image={Meals} hide label='hidden' /> -->
+        <MenuItem item='LUNCH/DINNER' itemName='Chinese' image={Chinese} hide label='hidden' />
+        <MenuItem item='LUNCH/DINNER' itemName='Continental' image={Continental} hide label='hidden' />
+        <MenuItem item='DINNER' itemName='Starters' image={Starters} hide label='hidden' />
+        <MenuItem item='DINNER' itemName='Curries' image={Curries} hide label='hidden' />
+        <MenuItem item='DINNER' itemName='Rosies' image={Rosies} hide label='hidden' />
+
+    </div>
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border: 1px solid #7775;
+        border-inline: 0;
+    }
+    h2 {
+        margin-top: 2rem;
+        padding-left: 3vw;
+        font-weight: 500;
+        color: #081a26;
+    }
+    @media only screen and (max-width: 500px)  {
+        .container {
+            grid-template-columns: auto;
+        }
+    }
+    @media only screen and (min-width: 501px) and (max-width: 724px) {
+        .container {
+            grid-template-columns: auto auto;
+        }
+    }
+    @media only screen and (min-width: 725px) and (max-width: 1024px) {
+        .container {
+            grid-template-columns: auto auto auto;
+        }
+    }
+</style>

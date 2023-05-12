@@ -1,0 +1,55 @@
+---
+import MenuItem from "./MenuItem.astro";
+import Breakfast from "../Images/breakfast.jpg"
+import Lunch from "../Images/lunch.jpg"
+import Dinner from "../Images/dinner.jpg"
+import Dessert from "../Images/dessert.jpg"
+---
+
+<div class="mainContainer">
+    <h2>Main Categories</h2>
+    <div class="container">
+        <a href="/breakfast">
+            <MenuItem item='BREAKFAST' image={Breakfast} />
+        </a>
+        <a href="/lunch">
+            <MenuItem item='LUNCH' image={Lunch} />
+        </a>
+        <a href="/dinner">
+            <MenuItem item='DINNER' image={Dinner} />
+        </a>
+        <a href="/dessert">
+            <MenuItem item='DESSERT' image={Dessert} />
+        </a>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border: 1px solid #7775;
+        border-inline: 0;
+    }
+    h2 {
+        margin-top: 2rem;
+        padding-left: 3vw;
+        font-weight: 500;
+        color: #081a26;
+    }
+    @media only screen and (max-width: 500px)  {
+        .container {
+            grid-template-columns: auto;
+        }
+    }
+    @media only screen and (min-width: 501px) and (max-width: 724px) {
+        .container {
+            grid-template-columns: auto auto;
+        }
+    }
+    @media only screen and (min-width: 725px) and (max-width: 1024px) {
+        .container {
+            grid-template-columns: auto auto auto;
+        }
+    }
+</style>

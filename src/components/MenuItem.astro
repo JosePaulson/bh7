@@ -1,0 +1,77 @@
+---
+const {item, image, label='label', itemName='', hide='hidden'} = Astro.props
+---
+
+<div class="container">
+    <div class="imgContainer">
+        <img src={image}>
+        <div class={label}>
+            <p>{item}</p>
+        </div>
+    </div>
+    <div class={hide} id="item">
+        <h4 class="item">{item}</h4>
+        <p class="item-name">{itemName}</p>
+    </div>
+
+</div>
+
+<style>
+    .container {
+        margin: 1.25rem;
+        overflow: hidden;
+    }
+    .label {
+        position: absolute;
+        background-color: #000b;
+        width: 9rem;
+        height: 9rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    p {
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .imgContainer {
+        overflow: hidden;
+        position: relative;
+        box-shadow: 1px 1px 15px 1px #0001;
+    }
+    img {
+        padding: 1rem;
+        transition: all 150ms ease-in;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    img:hover {
+        transform: scale(1.45);
+    }
+    .hidden {
+        display: none;
+    }
+    /* #item {
+        text-align: center;
+    } */
+    .item {
+        color: #336e6e;
+        font-weight: 700;
+        line-height: .7rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .item-name {
+        text-transform: none;
+        color: #222;
+        font-weight: 500;
+        line-height: .5rem;
+        font-size: 1.25rem;
+        font-style: italic;
+    }
+</style>
